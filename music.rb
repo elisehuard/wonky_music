@@ -2,7 +2,7 @@ $: << ENV['AKKA_HOME']
 
 require 'java'
 
-require 'jl1.0.1.jar'
+require 'lib/jl1.0.1.jar'
 java_import 'javazoom.jl.player.Player';
 java_import 'java.io.BufferedInputStream';
 java_import 'java.io.FileInputStream';
