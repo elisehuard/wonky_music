@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'conductor'
+
+conductor = Conductor.spawn
+
+conductor.send_one_way("go")
+
+sleep(20)
+
+Akka::Actors.registry.shutdownAll
